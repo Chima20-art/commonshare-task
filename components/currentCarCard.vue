@@ -38,7 +38,7 @@
             <img
               :src="car.img"
               key="car2 png"
-              class="h-full w-full p-11 object-contain rounded-lg cursor-pointer"
+              class="h-full w-full p-2 object-contain rounded-lg cursor-pointer"
             />
             <img
               src="/bg1.svg"

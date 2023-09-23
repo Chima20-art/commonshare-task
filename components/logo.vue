@@ -1,11 +1,11 @@
 <template>
-  <NuxtLink to="/">
+  <a href="/">
     <p
       class="font-primary text-2xl font-bold text-primary-500 leading[150%] tracking-[96%]"
     >
       DM
     </p>
-  </NuxtLink>
+  </a>
 </template>
 
 <script lang="ts">
