@@ -3,7 +3,7 @@
     class="bg-primary-0 rounded-[10px] drop-shadow flex flex-col"
     :class="{
       'w-[304px] p-6  h-[360px] ': size === 'normal',
-      'w-full h-fit min-h-[240px] p-4': size === 'small',
+      'w-full h-full min-h-[240px] p-4': size === 'small',
       'w-full p-4 h-fit min-h-[300px] ': size === 'smaller',
     }"
   >
@@ -64,7 +64,7 @@
           :src="img"
           class="flex-1 w-full object-contain"
           :class="{
-            'flex-1 max-h-[118px] ': size === 'small',
+            'flex-1  ': size === 'small',
           }"
         />
         <div
