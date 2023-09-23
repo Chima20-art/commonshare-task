@@ -51,8 +51,9 @@ export default defineComponent({
   methods: {
     searchRedirect() {
       if (this.search != "") {
-        this.$router.push(`/search/${this.search}`);
-        this.search = "";
+        if (process.client) {
+          window.location.href = `/search/${this.search}`;
+        }
       }
     },
   },

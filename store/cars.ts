@@ -24,7 +24,11 @@ export const useCarStore = defineStore({
       this.favoriteCars = cars;
     },
     addReconmendedCars(cars: Car[]) {
-      this.recomandedCars.push(...cars);
+      cars.forEach((car) => {
+        if (!this.recomandedCars.find((c) => c.id === car.id)) {
+          this.recomandedCars.push(car);
+        }
+      });
     },
     toggleFavoriteCar(car: Car) {
       //check if favorite remove it else add it

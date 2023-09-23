@@ -12,7 +12,7 @@
       <Carousel v-bind="settings" :breakpoints="breakpoints" class="">
         <Slide v-for="car in cars" :key="car.id">
           <div class="carousel__item">
-            <NuxtLink :to="`/car/${car.id}`">
+            <a :href="`/car/${car.id}`">
               <Card
                 :title="car.name"
                 :type="car.type"
@@ -24,7 +24,7 @@
                 :size="size"
                 :id="car.id"
               />
-            </NuxtLink>
+            </a>
           </div>
         </Slide>
       </Carousel>

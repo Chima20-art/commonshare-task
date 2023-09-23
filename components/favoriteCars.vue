@@ -9,11 +9,11 @@
       <div
         class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-center"
       >
-        <NuxtLink
+        <a
           class="flex items-center justify-center"
           v-for="(car, index) in cars"
           :key="car.id"
-          :to="`/car/${car.id}`"
+          :href="`/car/${car.id}`"
         >
           <Card
             :title="car.name"
@@ -31,7 +31,7 @@
                 : null
             "
           />
-        </NuxtLink>
+        </a>
       </div>
     </div>
   </div>
