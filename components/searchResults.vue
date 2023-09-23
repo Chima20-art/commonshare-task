@@ -45,7 +45,9 @@
       </button>
     </div>
     <div v-else>
-      <h1 class="text-xl font-primary">No Results Found</h1>
+      <h1 class="text-2xl font-primary w-full text-center text-primary-400">
+        No Results Found
+      </h1>
     </div>
   </div>
 </template>

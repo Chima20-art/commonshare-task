@@ -5,7 +5,10 @@
         Favorite Cars
       </h3>
     </div>
-    <div class="flex flex-col gap-[56px] items-center justify-center">
+    <div
+      v-if="cars.length > 0"
+      class="flex flex-col gap-[56px] items-center justify-center"
+    >
       <div
         class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-center"
       >
@@ -33,6 +36,11 @@
           />
         </NuxtLink>
       </div>
+    </div>
+    <div v-else>
+      <h1 class="text-2xl font-primary w-full text-center text-primary-400">
+        No Favorite Found
+      </h1>
     </div>
   </div>
 </template>
